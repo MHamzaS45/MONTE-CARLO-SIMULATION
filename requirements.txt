@@ -1,0 +1,5 @@
+# The requirements for the Monte Carlo Pricer Engine are:
+
+numpy
+scipy
+matplotlib

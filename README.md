@@ -38,7 +38,7 @@ Monte-Carlo-Simulation/
 ### Requirements
 
 - Python 3.x
-- Packages listed in `requirements.txt`:
+- Required packages listed in `requirements.txt`:
   - `numpy`
   - `scipy`
   - `matplotlib`

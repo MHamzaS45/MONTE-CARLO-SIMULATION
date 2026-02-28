@@ -76,8 +76,6 @@ Market and simulation inputs are defined in `config.py`:
 - `MarketParams(spot, strike, rate, volatility, maturity)`
 - `SimulationParams(n_paths, seed=42, antithetic=True)`
 
-Note: `SimulationParams.antithetic` is currently a **configuration flag only**; the engine does not apply antithetic sampling unless you explicitly integrate it.
-
 ### Pricing engine
 
 `engine.py` defines `MonteCarloEngine`, which:
@@ -133,13 +131,3 @@ print(price, ci, discounted.shape)
 - Confidence intervals use a normal approximation with a fixed 1.96 z-score for 95% confidence.
 - The variance reduction helper in `variance/antithetic.py` is provided, but **not connected** to `MonteCarloEngine` by default.
 
-## Suggested extensions
-
-- Wire antithetic sampling into `GeometricBrownianMotion.simulate_paths` or `MonteCarloEngine.price`
-- Add additional payoffs (digital, Asian, barrier) and corresponding analytics/benchmarks where available
-- Add more Greeks (Gamma, Vega, Theta) via finite differences or pathwise estimators
-- Add unit tests and a small CLI wrapper for parameter inputs
-
-## License
-
-No license file is included in this repository. If you intend to distribute or reuse this code, add a `LICENSE` file that matches your intended usage.

@@ -16,6 +16,7 @@ A small, modular Monte Carlo simulation project for **pricing European options**
 ## Repository structure
 
 ```text
+
 Monte-Carlo-Simulation/
 ├── analytics/
 │   ├── black_scholes.py        # closed-form European call (benchmark)
@@ -29,8 +30,9 @@ Monte-Carlo-Simulation/
 ├── greeks.py                   # finite-difference Delta
 ├── main.py                     # runnable example (prints results + plot)
 ├── Monte Carlo simulation.py   # legacy single-file baseline script
-├── requirements.txt
-└── README.md
+├── requirements.txt            # Listed Requirements
+└── README.md         
+
 ```
 
 ## Installation
@@ -38,7 +40,7 @@ Monte-Carlo-Simulation/
 ### Requirements
 
 - Python 3.x
-- Required packages listed in `requirements.txt`:
+- Required packages as listed in `requirements.txt`:
   - `numpy`
   - `scipy`
   - `matplotlib`
@@ -105,7 +107,7 @@ Create market/simulation parameters, instantiate the engine, and price:
 ```python
 from config import MarketParams, SimulationParams
 from engine import MonteCarloEngine
-
+# Settings...can be configured
 market = MarketParams(
     spot=100,
     strike=105,

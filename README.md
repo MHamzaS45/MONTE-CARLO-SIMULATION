@@ -1,4 +1,4 @@
-# Monte Carlo Pricer Engine
+# Monte Carlo Pricer Engine Simulation
 
 A small, modular Monte Carlo simulation project for **pricing European options** under a **Geometric Brownian Motion (GBM)** model. The repository includes a pricing engine with a 95% confidence interval, a Black–Scholes benchmark for validation, convergence diagnostics, and a finite-difference Delta example.
 

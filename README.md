@@ -1,4 +1,4 @@
-# Monte Carlo Pricer Engine Simulation
+# European Pricer Engine through Monte Carlo Simulation
 
 A personal project done as part of an application of my background knowledge in A Levels Economics and Statistics/Mathematics. 
 
